@@ -1,0 +1,65 @@
+{
+    "version": "0",
+    "id": "",
+    "detail-type": "AWS API Call via CloudTrail",
+    "source": "aws.config",
+    "account": "",
+    "time": "2019-08-26T19:03:53Z",
+    "region": "eu-west-2",
+    "resources": [],
+    "detail": {
+        "eventVersion": "1.05",
+        "userIdentity": {
+            "type": "AssumedRole",
+            "principalId": "",
+            "arn": "arn:aws:sts:::assumed-role/AWSServiceRoleForConfig/configLambdaExecution",
+            "accountId": "",
+            "accessKeyId": "",
+            "sessionContext": {
+                "sessionIssuer": {
+                    "type": "Role",
+                    "principalId": "",
+                    "arn": "",
+                    "accountId": "",
+                    "userName": "AWSServiceRoleForConfig"
+                },
+                "webIdFederationData": {},
+                "attributes": {
+                    "mfaAuthenticated": "false",
+                    "creationDate": "2019-08-26T19:03:53Z"
+                }
+            },
+            "invokedBy": "config.amazonaws.com"
+        },
+        "eventTime": "2019-08-26T19:03:53Z",
+        "eventSource": "config.amazonaws.com",
+        "eventName": "PutEvaluations",
+        "awsRegion": "eu-west-2",
+        "sourceIPAddress": "config.amazonaws.com",
+        "userAgent": "config.amazonaws.com",
+        "requestParameters": {
+            "resultToken": "",
+            "testMode": false,
+            "evaluations": [
+                {
+                    "annotation": "The S3 bucket ACL allows public read access.",
+                    "orderingTimestamp": "Aug 26, 2019 7:03:37 PM",
+                    "complianceResourceType": "AWS::S3::Bucket",
+                    "complianceResourceId": "dpg-config-user-bucket",
+                    "complianceType": "NON_COMPLIANT"
+                }
+            ]
+        },
+        "responseElements": null,
+        "additionalEventData": {
+            "configRuleName": "dpg-config-user1-s3-non-compliant",
+            "configRuleArn": "arn:aws:config:eu-west-2::config-rule/config-rule-mh2vy1",
+            "notificationJobType": "NOTIFIED",
+            "configRuleInputParameters": "{}",
+            "managedRuleIdentifier": "S3_BUCKET_PUBLIC_READ_PROHIBITED"
+        },
+        "requestID": "",
+        "eventID": "",
+        "eventType": "AwsApiCall"
+    }
+}

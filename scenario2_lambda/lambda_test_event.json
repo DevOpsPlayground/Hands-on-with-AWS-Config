@@ -1,0 +1,93 @@
+{
+    "version": "1.0",
+    "invokingEvent": {
+        "configurationItemDiff": {
+            "changedProperties": {
+                "Configuration.codeSha256": {
+                    "previousValue": "",
+                    "updatedValue": "",
+                    "changeType": "UPDATE"
+                },
+                "Configuration.lastModified": {
+                    "previousValue": "2019-08-26T19:18:16.555+0000",
+                    "updatedValue": "2019-08-26T20:08:38.991+0000",
+                    "changeType": "UPDATE"
+                },
+                "Configuration.revisionId": {
+                    "previousValue": "",
+                    "updatedValue": "",
+                    "changeType": "UPDATE"
+                },
+                "Configuration.codeSize": {
+                    "previousValue": 1008,
+                    "updatedValue": 1017,
+                    "changeType": "UPDATE"
+                }
+            },
+            "changeType": "UPDATE"
+        },
+        "configurationItem": {
+            "relatedEvents": [],
+            "relationships": [
+                {
+                    "resourceId": null,
+                    "resourceName": "lambda-execution-role",
+                    "resourceType": "AWS::IAM::Role",
+                    "name": "Is associated with "
+                }
+            ],
+            "configuration": {
+                "functionName": "dpg-config-user1-s3",
+                "functionArn": "arn:aws:lambda:eu-west-2::function:dpg-config-user1-s3",
+                "runtime": "python3.6",
+                "role": "arn:aws:iam:::role/lambda-execution-role",
+                "handler": "lambda_function.lambda_handler",
+                "codeSize": 1017,
+                "description": "",
+                "timeout": 120,
+                "memorySize": 128,
+                "lastModified": "2019-08-26T20:08:38.991+0000",
+                "codeSha256": "",
+                "version": "$LATEST",
+                "vpcConfig": {
+                    "subnetIds": [],
+                    "securityGroupIds": []
+                },
+                "tracingConfig": {
+                    "mode": "PassThrough"
+                },
+                "revisionId": "",
+                "layers": []
+            },
+            "supplementaryConfiguration": {
+                "Concurrency": null,
+                "Tags": {}
+            },
+            "tags": {},
+            "configurationItemVersion": "1.3",
+            "configurationItemCaptureTime": "2019-08-26T20:10:42.508Z",
+            "configurationStateId": 1566850242508,
+            "awsAccountId": "",
+            "configurationItemStatus": "OK",
+            "resourceType": "AWS::Lambda::Function",
+            "resourceId": "dpg-config-user1-s3",
+            "resourceName": "dpg-config-user1-s3",
+            "ARN": "arn:aws:lambda:eu-west-2::function:dpg-config-user1-s3",
+            "awsRegion": "eu-west-2",
+            "availabilityZone": "Not Applicable",
+            "configurationStateMd5Hash": "",
+            "resourceCreationTime": null
+        },
+        "notificationCreationTime": "2019-08-26T20:10:42.978Z",
+        "messageType": "ConfigurationItemChangeNotification",
+        "recordVersion": "1.3"
+    },
+    "ruleParameters": "{}",
+    "resultToken": "",
+    "eventLeftScope": false,
+    "executionRoleArn": "arn:aws:iam: : :role/aws-service-role/config.amazonaws.com/AWSServiceRoleForConfig",
+    "configRuleArn": "arn:aws:config:eu-west-2: :config-rule/config-rule-57o93o",
+    "configRuleName": "dpg-config-user1-lambda-logging",
+    "configRuleId": "config-rule-57o93o",
+    "accountId": ""
+}

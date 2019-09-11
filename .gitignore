@@ -1,0 +1,8 @@
+.terraform
+*.tfstate
+*.tfstate.backup
+arch
+.env
+.terraform*
+.DS_Store
+archive*
